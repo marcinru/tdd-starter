@@ -5,8 +5,9 @@
  *
  * Examples:
  * country_capitals = [{'country': 'Poland', 'capital': 'Warsaw'}]
- * displayCapitals(country_capitals) // should return ["The capital of Poland is Warsaw"]
+ * displayCapitals(country_capitals) // returns ['The capital of Poland is Warsaw']
  *
- * mixed_capitals: [{"state": 'Texas', capital: 'Austin'}, {country: 'Spain', "capital": "Madrid"}]
- * displayCapitals(mixed_capitals) // returns ["The capital of Texas is Austin", "The capital of Spain is Madrid"]
+ * mixed_capitals: [{'state': 'Texas', capital: 'Austin'}, {country: 'Spain', 'capital': 'Madrid'}]
+ * displayCapitals(mixed_capitals) // should return:
+ * ['The capital of Texas is Austin', 'The capital of Spain is Madrid']
  */
