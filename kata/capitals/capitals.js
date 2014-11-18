@@ -10,3 +10,19 @@
  * mixed_capitals: [{"state": 'Texas', capital: 'Austin'}, {country: 'Spain', "capital": "Madrid"}]
  * displayCapitals(mixed_capitals) // returns ["The capital of Texas is Austin", "The capital of Spain is Madrid"]
  */
+/*function displayCapitals(info) {
+	var country, capital;
+	var result = [];
+	for (var i = 0; i < info.length; i++) {
+		country = info[i].country || info[i].state;
+		capital = info[i].capital;
+		result.push("The capital of " + country + " is " + capital);
+	}
+	return result;
+}*/
+
+function displayCapitals(info) {
+	return info.map(function(el) {
+		return "The capital of " + (el.country || el.state) + " is " + el.capital;
+	});
+}
